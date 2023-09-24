@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-gradient-to-r from-gray-50 via-zinc-100 to-gray-50">
+    
+    <nav class="bg-gradient-to-r from-blue-300 via-sky-600 to-blue-300 text-white py-4">
+        <div class="container mx-auto flex justify-center">
+            <h3 class="text-2xl font-bold ">Matías 8️⃣🅰️</h3>
+        </div>
+        
+        <div class="container mx-auto flex justify-around items-center">
+            <ul class="flex space-x-4">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#AboutMe">Sobre mi</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Js">Js</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Galeria de Fotos -->
+    <section id="Fotos">
+        <div class="carousel w-full mx-0">
+            <div id="carousel__container" class="relative h-45">
+                <button aria-label="Anterior" id="carousel__anterior" class="absolute block w-7.5 h-7.5 border-0 cursor-pointer text-center text-white inset-y-0 left-0 p-5 z-10 opacity-20 hover:opacity-100">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <div id="carousel__lista" class="overflow-hidden h-full">
+                    <!-- Imagenes -->
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="https://picsum.photos/id/1/1200/400" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="./Fotos/Costura.jpg" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="./Fotos/historia.jpg" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="./Fotos/matematicas.jpg" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="./Fotos/naturaleza.jpg" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                    <div id="carousel__elemento" class="mx-auto z-0 group">
+                        <img src="./Fotos/playa.jpg" class="m-0 p-0 h-96 w-full transition duration-500 ease-in-out transform hover:scale-150" alt="...">
+                    </div>
+                </div>
+                
+                <button aria-label="Siguiente" id="carousel__siguiente" class="absolute block w-7.5 h-7.5 border-0 cursor-pointer text-center text-white inset-y-0 right-0 p-5 z-10 opacity-20 hover:opacity-100">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div role="tablist" id="carousel__indicadores"></div>
+        </div>
+    </section>
+
+
+    <!-- Informacion sobre mi -->
+    <section id="AboutMe">
+        <div>
+            <div class="text-center">
+                <h2 class="text-2xl mt-6">Sobre mi</h2>
+                <p class="flex justify-center">Soy un apasionado de la informática con un compromiso inquebrantable hacia el aprendizaje. Mi objetivo es mejorar a través de la tecnología.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row mt-6 mx-3 text-justify">
+                <div id="info1" class="flex-1 text-center">
+                    <h3 class="text-lg">Matemática</h3>
+                    <p>Mi pasión por las matemáticas me impulsa a explorar nuevas soluciones y a comunicar conceptos complejos de manera accesible para inspirar la apreciación y el conocimiento de esta disciplina.</p>
+                </div>
+                <div id="info2" class="flex-1 text-center">
+                    <h3 class="text-lg">Informática</h3>
+                    <p>Desde la creación de aplicaciones móviles hasta el análisis de seguridad cibernética, mi dedicación a la informática me motiva a explorar los límites de la tecnología y a construir soluciones eficaces.</p>
+                </div>
+                <div id="info3" class="flex-1 text-center">
+                    <h3 class="text-lg">Sastrería</h3>
+                    <p>La sastrería es mi pasión y mi forma de expresión artística. Mi objetivo es compartir la belleza y la artesanía de la sastrería, creando trajes que no solo visten a las personas, sino que también cuentan historias y transmiten confianza a quienes los llevan puestos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <section id="Js" class="flex flex-col sm:flex-row sm:mb-6 my-1 justify-center">
+        <!-- Extraido de https://codepen.io/lalwanivikas/pen/eZxjqo -->
+        <div id="calculadora" class="mx-6 my-6">
+            <div class="input" id="input"></div>
+            <div class="buttons">
+                <div class="operators">
+                  <div>+</div>
+                  <div>-</div>
+                  <div>&times;</div>
+                  <div>&divide;</div>
+                </div>
+            <div class="leftPanel">
+                <div class="numbers">
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+                <div class="numbers">
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+                <div class="numbers">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+                <div class="numbers">
+                    <div>0</div>
+                    <div>.</div>
+                    <div id="clear">C</div>
+                  </div>
+                </div>
+                <div class="equal" id="result">=</div>
+            </div>
+        </div>
+        <div id="calculadora2" class="bg-gray-200 pt-3 h-auto w-auto my-auto">
+            <form class="mx-1">
+                <label for="edadUsuario">Tu edad:</label>
+                <input type="number" id="edadUsuario" class="border rounded p-2" required>
+                <button class="bg-blue-500 text-white rounded p-2 hover:bg-blue-700" type="button" onclick="calcularDiferenciaEdad()">Calcular</button>
+                <p id="resultado" class="text-center my-2"></p>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Formulario -->
+    <section id="Contacto">
+        <div class="bg-gray-200 mx-auto p-7">
+            <div id="success-message" class="hidden bg-green-500 text-white rounded p-2">Tu mensaje ha sido enviado con éxito.</div>        
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label class="block" for="name">Nombre</label>
+                    <input class="w-full border rounded p-2" type="text" name="name" id="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block" for="email">Correo electrónico</label>
+                    <input class="w-full border rounded p-2" type="email" name="email" id="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block" for="subject">Asunto</label>
+                    <input class="w-full border rounded p-2" type="text" name="subject" id="subject" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block" for="message">Mensaje</label>
+                    <textarea class="w-full border rounded p-2" name="message" id="message" rows="5" required></textarea>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white rounded p-2" type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/calculadora.js"></script>
+    <script src="js/calcEdad.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f38126e9c.js" crossorigin="anonymous"></script>
+</body>
+</html>
